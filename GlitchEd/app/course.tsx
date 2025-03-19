@@ -13,14 +13,14 @@ const courses = [
         id: '2',
         title: 'Understanding TypeScript',
         instructor: 'Maximilian Schwarzmuller',
-        image: 'https://th.bing.com/th/id/OIP.6GtW4IGpWKTMqRqE6AYzCQHaEK?w=288&h=180&c=7&r=0&o=5&dpr=1.1&pid=1.7',
+        image: 'https://via.placeholder.com/150',
         link: 'https://www.udemy.com/course/understanding-typescript/',
     },
     {
         id: '3',
         title: 'Pythonn for data science and ML',
         instructor: 'Jose Portilla',
-        image: 'https://th.bing.com/th/id/OIP.brynld1DvXT46qYqLxkCHgHaFj?w=219&h=180&c=7&r=0&o=5&dpr=1.1&pid=1.7',
+        image: 'https://via.placeholder.com/150',
         link: 'https://www.udemy.com/course/python-for-data-science-and-machine-learning-bootcamp/?couponCode=IND21PM',
     },
 ];
@@ -37,7 +37,7 @@ const ViewCoursesScreen = () => {
     const renderCourseItem = ({ item }: { item: typeof courses[0] }) => (
         <TouchableOpacity
             style={styles.courseCard}
-            onPress={() => router.push(`/course/${item.id}`)}
+            onPress={() => router.push(`//${item.id}`)}
         >
             <Image source={{ uri: item.image }} style={styles.courseImage} />
             <View style={styles.courseInfo}>

@@ -1,6 +1,10 @@
 import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
 import { useRouter } from 'expo-router';
 
+export const options = {
+  headerShown: false, // Hide the header
+};
+
 const HomeScreen = () => {
   const router = useRouter();
 
@@ -13,10 +17,6 @@ const HomeScreen = () => {
       </Text>
 
       {/* Buttons */}
-      <TouchableOpacity style={styles.button} onPress={() => router.push('/details')}>
-        <Text style={styles.buttonText}>📖 View Details</Text>
-      </TouchableOpacity>
-
       <TouchableOpacity style={styles.button} onPress={() => router.push('/catalog')}>
         <Text style={styles.buttonText}>📚 Course Catalog</Text>
       </TouchableOpacity>
