@@ -2,24 +2,21 @@ import React from 'react';
 import { View, Text, StyleSheet, TouchableOpacity, ScrollView, Image } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
 import { useRouter } from 'expo-router';
-import { Ionicons } from '@expo/vector-icons'; // For icons
+import { Ionicons } from '@expo/vector-icons';
 
 export const options = {
-  headerShown: false, // Hide the header
+  headerShown: false,
 };
 
 const HomeScreen = () => {
   const router = useRouter();
+  const logoImage = require('../assets/images/app-logo.png');
 
-  // Import the local logo image using require
-  const logoImage = require('../assets/images/app-logo.png'); // Path to your logo image
-
-  // Import the hero image using require
-  const heroImage = require('../assets/images/hero-image.jpg'); // Path to your hero image
+  const heroImage = require('../assets/images/hero-image.jpg');
 
   return (
     <LinearGradient
-      colors={['#6a11cb', '#2575fc']} // Gradient from purple to blue
+      colors={['#6a11cb', '#2575fc']}
       style={styles.background}
     >
       <ScrollView contentContainerStyle={styles.scrollContainer}>
@@ -27,9 +24,9 @@ const HomeScreen = () => {
         <View style={styles.header}>
           {/* Logo */}
           <Image
-            source={logoImage} // Use the local logo image
+            source={logoImage}
             style={styles.logo}
-            resizeMode="contain" // Ensure the logo fits within the specified dimensions
+            resizeMode="contain" 
           />
           <Text style={styles.tagline}>Rebel against boring learning</Text>
         </View>
@@ -38,9 +35,9 @@ const HomeScreen = () => {
         <View style={styles.hero}>
           {/* Hero Image */}
           <Image
-            source={heroImage} // Use the hero image
+            source={heroImage}
             style={styles.heroImage}
-            resizeMode="cover" // Ensure the image covers the entire area
+            resizeMode="cover"
           />
           <Text style={styles.heroText}>Start Your Learning Journey Today!</Text>
           <TouchableOpacity style={styles.heroButton} onPress={() => router.push('/catalog')}>
@@ -98,8 +95,8 @@ const styles = StyleSheet.create({
     marginBottom: 30,
   },
   logo: {
-    width: 100, // Adjust the width as needed
-    height: 100, // Adjust the height as needed
+    width: 300, // Adjust the width as needed
+    height: 125, // Adjust the height as needed
     marginBottom: 10,
   },
   tagline: {
