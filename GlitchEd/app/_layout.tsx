@@ -12,7 +12,7 @@ export default function RootLayout() {
           fontWeight: 'bold',
         },
       }}>
-      <Stack.Screen name="GlitchEd" />
+      <Stack.Screen name="index" />
       <Stack.Screen name="catalog" />
       <Stack.Screen name="course" />
       <Stack.Screen name="dashboard" />

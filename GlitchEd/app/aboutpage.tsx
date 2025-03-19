@@ -25,7 +25,7 @@ const AboutPage = () => {
             </View>
             <View style={styles.infoContainer}>
                 <Text style={styles.infoLabel}>Developed by:</Text>
-                <Text style={styles.infoValue}>Team GlitchEd</Text>
+                <Text style={styles.infoValue}>Team 11K</Text>
             </View>
         </View>
     );
