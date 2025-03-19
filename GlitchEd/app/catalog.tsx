@@ -10,7 +10,7 @@ const courses = [
                 title: 'React Native for Beginners',
                 instructor: 'John Doe',
                 platform: 'Udemy',
-                image: 'https://via.placeholder.com/150',
+                image: 'https://www.google.com/imgres?q=react%20native&imgurl=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2Fa%2Fa7%2FReact-icon.svg%2F1200px-React-icon.svg.png&imgrefurl=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FReact_Native&docid=OtKnbiof2BxuvM&tbnid=gaYKxV5AiW9dTM&vet=12ahUKEwjQsani55WMAxU1zzgGHRhiH-EQM3oECBcQAA..i&w=1200&h=1068&hcb=2&ved=2ahUKEwjQsani55WMAxU1zzgGHRhiH-EQM3oECBcQAA',
                 link: 'https://www.udemy.com/course/react-native-for-beginners/',
             },
             {
